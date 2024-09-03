@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../File1/interior-2685521_640.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 84%;
+    padding: 20px 0;
+    margin: auto;
+}
+h1{
+    width: 150px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #ffffff;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+   
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase
+}
+ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: rgb(199, 170, 170);
+    transition: 0.5s;
+}
+ul li:hover:after{
+    width: 100%;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+}
+.content h3{
+    margin-top: 80px;
+    font-size: 70px;
+    letter-spacing: .5;
+}
+.content p{
+    font-weight: 100;
+    margin: 20px auto;
+    line-height: 25px;
+    
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid rgb(107, 69, 247);
+    background:transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    width: 0;
+    height: 100vh;
+    background: rgb(107, 69, 247);
+    position: absolute;
+    border-radius: 25px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.7s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+
+}
